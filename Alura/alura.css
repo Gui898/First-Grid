@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --main-white: #FFFFFF;
+    --secondary-gray: #C0C0C0;
+    --btn-color: #167BF7;
+    --back-color :#00030C;
+    
+    --main-font: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--back-color);
+    color: var(--main-white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+} 
+
+.principal{
+    background-image: url("./Imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao{
+    background-color: var(--btn-color);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--main-white);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--main-white);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--secondary-gray);
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 6em;
+}
+
+.descricao__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--main-white);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--secondary-gray);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos, .imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dispositivos__images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dispositivos__descricao{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    margin-top: 120px;
+}
+
+.rodape__logo{
+    margin-bottom: 16px;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.rodape__paragrafos{
+    text-align: center;
+    color: var(--secondary-gray);
+    font-size: 14px;
+}
+
+.rodape__help{
+    font-size: 16px;
+    color: var(--main-white);
+}
+
+.rodape__help:hover{
+    color: var(--btn-color);
+}
